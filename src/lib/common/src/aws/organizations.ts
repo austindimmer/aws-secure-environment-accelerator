@@ -45,7 +45,7 @@ export class Organizations {
     return organizationalUnit.OrganizationalUnit;
   }
 
-  async getPolicyByName(input: org.ListPoliciesRequest & { Name: string }): Promise<org.Policy | undefined> {
+  async getPolicyByName(input: org.ListPoliciesRequest & { Name?: string }): Promise<org.Policy | undefined> {
     const name = input.Name;
     delete input.Name;
 
