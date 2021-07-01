@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "prepare": "webpack-cli --config webpack.config.ts"
+    "prepare": ""
   },
   "source": "src/index.ts",
   "main": "dist/index.js",
