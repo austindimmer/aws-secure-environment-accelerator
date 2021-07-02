@@ -3,7 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@types/webpack': 4.41.8
   aws-cdk: 1.106.1
-  aws-sdk: 2.938.0
+  aws-sdk: 2.939.0
   colors: 1.4.0
   exponential-backoff: 3.1.0
   ts-loader: 7.0.5
@@ -14,7 +14,7 @@ specifiers:
 
 dependencies:
   aws-cdk: 1.106.1
-  aws-sdk: 2.938.0
+  aws-sdk: 2.939.0
   colors: 1.4.0
   exponential-backoff: 3.1.0
 
@@ -468,7 +468,7 @@ packages:
       '@aws-cdk/cx-api': 1.106.1
       '@aws-cdk/region-info': 1.106.1
       archiver: 5.3.0
-      aws-sdk: 2.938.0
+      aws-sdk: 2.939.0
       camelcase: 6.2.0
       cdk-assets: 1.106.1
       colors: 1.4.0
@@ -490,8 +490,8 @@ packages:
       - supports-color
     dev: false
 
-  /aws-sdk/2.938.0:
-    resolution: {integrity: sha512-e+KWYRyJ4Tvlg+6kQTze9Hxmkn+4/H8m+D8AXlfgUbtzyc1OBDf7cMCcl8IvCD3xoqELsgEunPC014v2JTTfZg==}
+  /aws-sdk/2.939.0:
+    resolution: {integrity: sha512-2KEAtTlVMDcpHP6+P9JU+mXTNhX3KZ0StW0Qi87oh8EUoRITZj64FrUylNvrCg69thCliAcNzBdlA1g5Iq+qEA==}
     engines: {node: '>= 0.8.0'}
     requiresBuild: true
     dependencies:
@@ -743,7 +743,7 @@ packages:
       '@aws-cdk/cloud-assembly-schema': 1.106.1
       '@aws-cdk/cx-api': 1.106.1
       archiver: 5.3.0
-      aws-sdk: 2.938.0
+      aws-sdk: 2.939.0
       glob: 7.1.7
       yargs: 16.2.0
     dev: false

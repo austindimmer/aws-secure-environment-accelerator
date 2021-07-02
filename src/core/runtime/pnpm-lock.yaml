@@ -21,7 +21,7 @@ specifiers:
   '@typescript-eslint/parser': 4.4.0
   adm-zip: 0.4.14
   aws-lambda: 1.0.6
-  aws-sdk: 2.938.0
+  aws-sdk: 2.939.0
   babel-jest: 25.2.0
   babel-loader: 8.1.0
   cfn-response: 1.0.1
@@ -58,7 +58,7 @@ dependencies:
   '@aws-accelerator/common-outputs': link:../../lib/common-outputs
   adm-zip: 0.4.14
   aws-lambda: 1.0.6
-  aws-sdk: 2.938.0
+  aws-sdk: 2.939.0
   cfn-response: 1.0.1
   generate-password: 1.5.1
   io-ts: 2.1.2
@@ -2249,8 +2249,8 @@ packages:
       xml2js: 0.4.19
     dev: false
 
-  /aws-sdk/2.938.0:
-    resolution: {integrity: sha512-e+KWYRyJ4Tvlg+6kQTze9Hxmkn+4/H8m+D8AXlfgUbtzyc1OBDf7cMCcl8IvCD3xoqELsgEunPC014v2JTTfZg==}
+  /aws-sdk/2.939.0:
+    resolution: {integrity: sha512-2KEAtTlVMDcpHP6+P9JU+mXTNhX3KZ0StW0Qi87oh8EUoRITZj64FrUylNvrCg69thCliAcNzBdlA1g5Iq+qEA==}
     engines: {node: '>= 0.8.0'}
     requiresBuild: true
     dependencies:

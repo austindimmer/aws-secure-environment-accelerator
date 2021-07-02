@@ -7,7 +7,7 @@ specifiers:
   '@types/aws-lambda': 8.10.46
   '@types/node': 12.12.6
   aws-lambda: 1.0.6
-  aws-sdk: 2.907.0
+  aws-sdk: 2.939.0
   exponential-backoff: 3.1.0
   ts-loader: 7.0.5
   typescript: 3.8.3
@@ -18,7 +18,7 @@ dependencies:
   '@aws-accelerator/custom-resource-cfn-utils': link:../../cdk-cfn-utils
   '@aws-accelerator/custom-resource-runtime-cfn-response': link:../../runtime-cfn-response
   aws-lambda: 1.0.6
-  aws-sdk: 2.907.0
+  aws-sdk: 2.939.0
   exponential-backoff: 3.1.0
 
 devDependencies:
@@ -309,6 +309,22 @@ packages:
 
   /aws-sdk/2.907.0:
     resolution: {integrity: sha512-P1gth8sVqXCIjKN78kyD3OosEzqUSYxDG04Cpp2wVGx/djsd5OSv4NkayOhKZ5OMXwk6IdA82oXV/HQR8EjbwQ==}
+    engines: {node: '>= 0.8.0'}
+    requiresBuild: true
+    dependencies:
+      buffer: 4.9.2
+      events: 1.1.1
+      ieee754: 1.1.13
+      jmespath: 0.15.0
+      querystring: 0.2.0
+      sax: 1.2.1
+      url: 0.10.3
+      uuid: 3.3.2
+      xml2js: 0.4.19
+    dev: false
+
+  /aws-sdk/2.939.0:
+    resolution: {integrity: sha512-2KEAtTlVMDcpHP6+P9JU+mXTNhX3KZ0StW0Qi87oh8EUoRITZj64FrUylNvrCg69thCliAcNzBdlA1g5Iq+qEA==}
     engines: {node: '>= 0.8.0'}
     requiresBuild: true
     dependencies:
