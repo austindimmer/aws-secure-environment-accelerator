@@ -15,7 +15,7 @@ specifiers:
   '@typescript-eslint/parser': 4.4.0
   adm-zip: 0.4.14
   archiver: 3.1.1
-  aws-sdk: 2.907.0
+  aws-sdk: 2.938.0
   babel-jest: 25.2.0
   deep-diff: 1.0.2
   eslint: 7.10.0
@@ -52,7 +52,7 @@ dependencies:
   '@types/prettier': 2.1.1
   adm-zip: 0.4.14
   archiver: 3.1.1
-  aws-sdk: 2.907.0
+  aws-sdk: 2.938.0
   deep-diff: 1.0.2
   exponential-backoff: 3.1.0
   fp-ts: 2.5.3
@@ -1293,8 +1293,8 @@ packages:
     hasBin: true
     dev: true
 
-  /aws-sdk/2.907.0:
-    resolution: {integrity: sha512-P1gth8sVqXCIjKN78kyD3OosEzqUSYxDG04Cpp2wVGx/djsd5OSv4NkayOhKZ5OMXwk6IdA82oXV/HQR8EjbwQ==}
+  /aws-sdk/2.938.0:
+    resolution: {integrity: sha512-e+KWYRyJ4Tvlg+6kQTze9Hxmkn+4/H8m+D8AXlfgUbtzyc1OBDf7cMCcl8IvCD3xoqELsgEunPC014v2JTTfZg==}
     engines: {node: '>= 0.8.0'}
     requiresBuild: true
     dependencies:
