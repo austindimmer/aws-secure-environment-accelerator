@@ -2,7 +2,7 @@ dependencies:
   '@aws-cdk/aws-iam': 1.101.0
   '@aws-cdk/core': 1.101.0
 devDependencies:
-  '@aws-accelerator/custom-resource-ec2-vpn-tunnel-options-runtime': link:runtime
+  '@aws-accelerator/custom-resource-iam-password-policy-runtime': link:runtime
   '@types/node': 12.12.6
   '@typescript-eslint/eslint-plugin': 4.4.0_c21ee66a5ac99908f14e5e09be34c27a
   '@typescript-eslint/parser': 4.4.0_eslint@7.10.0+typescript@3.8.3
@@ -36,9 +36,6 @@ packages:
     bundledDependencies:
       - jsonschema
       - semver
-    dependencies:
-      jsonschema: 1.4.0
-      semver: 7.3.5
     dev: false
     engines:
       node: '>= 10.13.0 <13 || >=13.7.0'
@@ -54,11 +51,7 @@ packages:
       '@aws-cdk/cloud-assembly-schema': 1.101.0
       '@aws-cdk/cx-api': 1.101.0
       '@aws-cdk/region-info': 1.101.0
-      '@balena/dockerignore': 1.0.2
       constructs: 3.3.94
-      fs-extra: 9.1.0
-      ignore: 5.1.8
-      minimatch: 3.0.4
     dev: false
     engines:
       node: '>= 10.13.0 <13 || >=13.7.0'
@@ -69,7 +62,6 @@ packages:
       - semver
     dependencies:
       '@aws-cdk/cloud-assembly-schema': 1.101.0
-      semver: 7.3.5
     dev: false
     engines:
       node: '>= 10.13.0 <13 || >=13.7.0'
@@ -322,10 +314,6 @@ packages:
       node: '>=6.9.0'
     resolution:
       integrity: sha512-M/NzBpEL95I5Hh4dwhin5JlE7EzO5PHMAuzjxss3tiOBD46KfQvVedN/3jEPZvdRvtsK2222XfdHogNIttFgcg==
-  /@balena/dockerignore/1.0.2:
-    dev: false
-    resolution:
-      integrity: sha512-wMue2Sy4GAVTk6Ic4tJVcnfdau+gx2EnG7S+uAEe+TWJFqE4YoWN4/H8MSLj4eYJKxGg26lZwboEniNiNwZQ6Q==
   /@eslint/eslintrc/0.1.3:
     dependencies:
       ajv: 6.12.6
@@ -654,19 +642,15 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-+Ryf6g3BKoRc7jfp7ad8tM4TtMiaWvbF/1/sQcZPkkS7ag3D5nMBCe2UfOTONtAkaG0tO0ij3C5Lwmf1EiyjHg==
-  /at-least-node/1.0.0:
-    dev: false
-    engines:
-      node: '>= 4.0.0'
-    resolution:
-      integrity: sha512-+q/t7Ekv1EDY2l6Gda6LLiX14rU9TV20Wa3ofeQmwPFZbOMo9DXrLbOjFaaclkXKWidIaopwAObQDqwWtGUjqg==
   /balanced-match/1.0.2:
+    dev: true
     resolution:
       integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==
   /brace-expansion/1.1.11:
     dependencies:
       balanced-match: 1.0.2
       concat-map: 0.0.1
+    dev: true
     resolution:
       integrity: sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==
   /braces/3.0.2:
@@ -681,7 +665,7 @@ packages:
     dependencies:
       caniuse-lite: 1.0.30001241
       colorette: 1.2.2
-      electron-to-chromium: 1.3.763
+      electron-to-chromium: 1.3.765
       escalade: 3.1.1
       node-releases: 1.1.73
     dev: true
@@ -775,10 +759,10 @@ packages:
     resolution:
       integrity: sha512-GKNxVA7/iuTnAqGADlTWX4tkhzxZKXp5fLJqKTlQLHkE65XDUKutZ3BHaJC5IGcper2tT3QRD1xr4o3jNpgXXg==
   /concat-map/0.0.1:
+    dev: true
     resolution:
       integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=
   /constructs/3.3.94:
-    bundledDependencies: []
     dev: false
     engines:
       node: '>= 10.17.0'
@@ -882,10 +866,10 @@ packages:
       node: '>=6.0.0'
     resolution:
       integrity: sha512-yS+Q5i3hBf7GBkd4KG8a7eBNNWNGLTaEwwYWUijIYM7zrlYDM0BFXHjjPWlWZ1Rg7UaddZeIDmi9jF3HmqiQ2w==
-  /electron-to-chromium/1.3.763:
+  /electron-to-chromium/1.3.765:
     dev: true
     resolution:
-      integrity: sha512-UyvEPae0wvzsyNJhVfGeFSOlUkHEze8xSIiExO5tZQ8QTr7obFiJWGk3U4e7afFOJMQJDszqU/3Pk5jtKiaSEg==
+      integrity: sha512-4NhcsfZYlr1x4FehYkK+R9CNNTOZ8vLcIu8Y1uWehxYp5r/jlCGAfBqChIubEfdtX+rBQpXx4yJuX/dzILH/nw==
   /emoji-regex/7.0.3:
     dev: true
     resolution:
@@ -1362,17 +1346,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-r5wGx7YeOwNWNlCA0wQ86zKyDLMQr+/RB8xy74M4hTphfmjlijTSSXGuH8rnvKZnfT9i+75zmd8jcKdMR4O6jA==
-  /fs-extra/9.1.0:
-    dependencies:
-      at-least-node: 1.0.0
-      graceful-fs: 4.2.6
-      jsonfile: 6.1.0
-      universalify: 2.0.0
-    dev: false
-    engines:
-      node: '>=10'
-    resolution:
-      integrity: sha512-hcg3ZmepS30/7BSFqRvoo3DOMQu7IjqxO5nCDt+zM9XWjb33Wg7ziNT+Qvqbuc3+gWpzO02JubVyk2G4Zvo1OQ==
   /fs.realpath/1.0.0:
     dev: true
     resolution:
@@ -1452,6 +1425,7 @@ packages:
     resolution:
       integrity: sha512-9O4MVG9ioZJ08ffbcyVYyLOJLk5JQ688pJ4eMGLpdWLHq/Wr1D9BlriLQyL0E+jbkuePVZXYFj47QM/v093wHg==
   /graceful-fs/4.2.6:
+    dev: true
     resolution:
       integrity: sha512-nTnJ528pbqxYanhpDYsi4Rd8MAeaBA67+RZ10CM1m3bTAVFEDcd5AuA4a6W5YkGZ1iNXHzZz8T6TBKLeBuNriQ==
   /has-bigints/1.0.1:
@@ -1495,6 +1469,7 @@ packages:
     resolution:
       integrity: sha512-cyFDKrqc/YdcWFniJhzI42+AzS+gNwmUzOSFcRCQYwySuBBBy/KjuxWLZ/FHEH6Moq1NizMOBWyTcv8O4OZIMg==
   /ignore/5.1.8:
+    dev: true
     engines:
       node: '>= 4'
     resolution:
@@ -1698,18 +1673,6 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-f+8cldu7X/y7RAJurMEJmdoKXGB/X550w2Nr3tTbezL6RwEE/iMcm+tZnXeoZtKuOq6ft8+CqzEkrIgx1fPoQA==
-  /jsonfile/6.1.0:
-    dependencies:
-      universalify: 2.0.0
-    dev: false
-    optionalDependencies:
-      graceful-fs: 4.2.6
-    resolution:
-      integrity: sha512-5dgndWOriYSm5cnYaJNhalLNDKOqFwyDB/rr1E9ZsGciGvKPs8R2xYGCacuf3z6K1YKDz182fd+fY3cn3pMqXQ==
-  /jsonschema/1.4.0:
-    dev: false
-    resolution:
-      integrity: sha512-/YgW6pRMr6M7C+4o8kS+B/2myEpHCrxO4PEWnqJNBFMjn7EWXqlQ4tGwL6xTHeRplwuZmcAncdvfOad1nT2yMw==
   /jsx-ast-utils/2.4.1:
     dependencies:
       array-includes: 3.1.3
@@ -1782,6 +1745,7 @@ packages:
   /lru-cache/6.0.0:
     dependencies:
       yallist: 4.0.0
+    dev: true
     engines:
       node: '>=10'
     resolution:
@@ -1808,6 +1772,7 @@ packages:
   /minimatch/3.0.4:
     dependencies:
       brace-expansion: 1.1.11
+    dev: true
     resolution:
       integrity: sha512-yJHVQEhyqPLUTgt9B83PXu6W3rx4MvvHvSUvToogpwoGDOUQ+yDrR0HRot+yOCdCO7u4hX3pWft6kWBBcqh0UA==
   /minimist/1.2.5:
@@ -2230,6 +2195,7 @@ packages:
   /semver/7.3.5:
     dependencies:
       lru-cache: 6.0.0
+    dev: true
     engines:
       node: '>=10'
     hasBin: true
@@ -2504,12 +2470,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-tZU/3NqK3dA5gpE1KtyiJUrEB0lxnGkMFHptJ7q6ewdZ8s12QrODwNbhIJStmJkd1QDXa1NRA8aF2A1zk/Ypyw==
-  /universalify/2.0.0:
-    dev: false
-    engines:
-      node: '>= 10.0.0'
-    resolution:
-      integrity: sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==
   /uri-js/4.4.1:
     dependencies:
       punycode: 2.1.1
@@ -2565,6 +2525,7 @@ packages:
     resolution:
       integrity: sha512-/lg70HAjtkUgWPVZhZcm+T4hkL8Zbtp1nFNOn3lRrxnlv50SRBv7cR7RqR+GMsd3hUXy9hWBo4CHTbFTcOYwig==
   /yallist/4.0.0:
+    dev: true
     resolution:
       integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==
   /yn/2.0.0:
@@ -2574,7 +2535,7 @@ packages:
     resolution:
       integrity: sha1-5a2ryKz0CPY4X8dklWhMiOavaJo=
 specifiers:
-  '@aws-accelerator/custom-resource-ec2-vpn-tunnel-options-runtime': workspace:^0.0.1
+  '@aws-accelerator/custom-resource-iam-password-policy-runtime': workspace:^0.0.1
   '@aws-cdk/aws-iam': 1.101.0
   '@aws-cdk/core': 1.101.0
   '@types/node': 12.12.6
