@@ -723,7 +723,6 @@ packages:
     dependencies:
       jsonschema: 1.4.0
       semver: 7.3.5
-    dev: true
     bundledDependencies:
       - jsonschema
       - semver
@@ -780,19 +779,12 @@ packages:
     dependencies:
       '@aws-cdk/cloud-assembly-schema': 1.106.1
       semver: 7.3.5
-    dev: true
     bundledDependencies:
       - semver
 
   /@aws-cdk/region-info/1.106.1:
     resolution: {integrity: sha512-9mnVSqYPnqf2wBQx3nZaBh1pnK29khFi87pNjQFkN7LmK/O9rVlx4syulknBtxLJusB0TDuvY3r5PUuUJ6kFjw==}
     engines: {node: '>= 10.13.0 <13 || >=13.7.0'}
-    dev: true
-
-  /@aws-cdk/region-info/1.106.1:
-    resolution: {integrity: sha512-9mnVSqYPnqf2wBQx3nZaBh1pnK29khFi87pNjQFkN7LmK/O9rVlx4syulknBtxLJusB0TDuvY3r5PUuUJ6kFjw==}
-    engines: {node: '>= 10.13.0 <13 || >=13.7.0'}
-    dev: false
 
   /@babel/code-frame/7.14.5:
     resolution: {integrity: sha512-9pzDqyc6OLDaqe+zbACgFkb6fKMNG6CObKpnYXChRsvYGyEdc7CA2BaqeOM+vOtCS5ndmJicPJhKAwYRI6UfFw==}

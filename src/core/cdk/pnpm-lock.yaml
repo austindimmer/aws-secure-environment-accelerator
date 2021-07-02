@@ -838,7 +838,6 @@ packages:
     dependencies:
       jsonschema: 1.4.0
       semver: 7.3.5
-    dev: true
     bundledDependencies:
       - jsonschema
       - semver
@@ -895,7 +894,6 @@ packages:
     dependencies:
       '@aws-cdk/cloud-assembly-schema': 1.106.1
       semver: 7.3.5
-    dev: true
     bundledDependencies:
       - semver
 
@@ -907,8 +905,6 @@ packages:
       '@aws-cdk/core': 1.106.1
       constructs: 3.3.94
     dev: false
-    bundledDependencies:
-      - semver
 
   /@aws-cdk/lambda-layer-kubectl/1.106.1:
     resolution: {integrity: sha512-ScrTyozJNmZEw00NghtAdFS5G+rQijOZYR9te+hXzWLrBfKhGb2l2lXz5T4QkxLV8CHlwM18Idgwgmjqg4Pe+w==}
@@ -922,12 +918,6 @@ packages:
   /@aws-cdk/region-info/1.106.1:
     resolution: {integrity: sha512-9mnVSqYPnqf2wBQx3nZaBh1pnK29khFi87pNjQFkN7LmK/O9rVlx4syulknBtxLJusB0TDuvY3r5PUuUJ6kFjw==}
     engines: {node: '>= 10.13.0 <13 || >=13.7.0'}
-    dev: true
-
-  /@aws-cdk/region-info/1.106.1:
-    resolution: {integrity: sha512-9mnVSqYPnqf2wBQx3nZaBh1pnK29khFi87pNjQFkN7LmK/O9rVlx4syulknBtxLJusB0TDuvY3r5PUuUJ6kFjw==}
-    engines: {node: '>= 10.13.0 <13 || >=13.7.0'}
-    dev: false
 
   /@babel/code-frame/7.14.5:
     resolution: {integrity: sha512-9pzDqyc6OLDaqe+zbACgFkb6fKMNG6CObKpnYXChRsvYGyEdc7CA2BaqeOM+vOtCS5ndmJicPJhKAwYRI6UfFw==}
@@ -2186,23 +2176,6 @@ packages:
       url: 0.10.3
       uuid: 3.3.2
       xml2js: 0.4.19
-    dev: true
-
-  /aws-sdk/2.938.0:
-    resolution: {integrity: sha512-e+KWYRyJ4Tvlg+6kQTze9Hxmkn+4/H8m+D8AXlfgUbtzyc1OBDf7cMCcl8IvCD3xoqELsgEunPC014v2JTTfZg==}
-    engines: {node: '>= 0.8.0'}
-    requiresBuild: true
-    dependencies:
-      buffer: 4.9.2
-      events: 1.1.1
-      ieee754: 1.1.13
-      jmespath: 0.15.0
-      querystring: 0.2.0
-      sax: 1.2.1
-      url: 0.10.3
-      uuid: 3.3.2
-      xml2js: 0.4.19
-    dev: false
 
   /aws-sign2/0.7.0:
     resolution: {integrity: sha1-tG6JCTSpWR8tL2+G1+ap8bP+dqg=}
