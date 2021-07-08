@@ -3,6 +3,9 @@
   "main": "cdk/index.ts",
   "private": true,
   "version": "0.0.1",
+  "scripts": {
+    "build": ""
+  },
   "dependencies": {
     "@aws-cdk/aws-iam": "1.106.1",
     "@aws-cdk/aws-lambda": "1.106.1",

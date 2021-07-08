@@ -14,6 +14,7 @@
     "aws-sdk": "2.939.0"
   },
   "scripts": {
+    "build": "",
     "prepare": "webpack-cli --config webpack.config.ts"
   },
   "devDependencies": {

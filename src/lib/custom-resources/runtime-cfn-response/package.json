@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "private": true,
   "main": "src/index.ts",
+  "scripts": {
+    "build": ""
+  },
   "devDependencies": {
     "@types/aws-lambda": "8.10.46",
     "@types/node": "12.12.6",

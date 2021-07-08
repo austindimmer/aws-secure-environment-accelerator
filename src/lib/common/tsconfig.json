@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "composite": true, // the composite flag
+    // "composite": true, // the composite flag
     "strict": true,
     "outDir": "dist",
     "target": "es2019",

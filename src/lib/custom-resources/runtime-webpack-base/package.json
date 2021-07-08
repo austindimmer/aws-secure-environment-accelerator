@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "private": true,
   "main": "src/index.ts",
+  "scripts": {
+    "build": ""
+  },
   "dependencies": {
     "@types/webpack": "4.41.8",
     "ts-loader": "7.0.5",

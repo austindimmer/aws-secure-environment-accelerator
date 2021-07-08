@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "build": "",
     "compile": "pnpx tsc --noEmit",
     "test": "pnpx jest",
     "lint": "eslint --ext .ts 'src/**/*.ts'"
